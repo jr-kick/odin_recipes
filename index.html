@@ -6,8 +6,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
     </head>
+    <style>
+        li {
+            padding-top: 5px;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            color: black;
+        }
+        a:hover {
+            color: grey;
+            animation-name: fade;
+            animation-duration: 0.4s;
+        }
+        @keyframes fade {
+            from {color: black;}
+            to {color: grey;}
+        }
+    </style>
     <body>
         <h1>Odin Recipes</h1>
-        <a href="./recipes/chinese_noodles.html">Chinese Noodles</a>
+        <ul style="list-style-type:none">
+            <li>
+                <a href="./recipes/chinese_noodles.html">Chinese Noodles</a>
+            </li>
+            <li>
+                <a href="./recipes/cauliflower_with_chickpea_and_curry.html">Cauliflower with Chickpea and Curry</a>
+            </li>
+            <li>
+                <a href="./recipes/cheese_cake.html">Cheese Cake</a>
+            </li>
+        </ul>
     </body>
 </html>
